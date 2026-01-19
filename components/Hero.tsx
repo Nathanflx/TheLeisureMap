@@ -19,39 +19,36 @@ export default function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-gray-900">Jelajahi </span>
-            <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-              Keindahan Lombok
+            <span className="text-gray-900">Explore</span>
+            <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent"> Lombok's beauty
             </span>
-            <br />
-            <span className="text-gray-800">dengan Harga Terbaik</span>
+            <span className="text-gray-800"> at the best rates.</span>
           </h1>
           
           <p className="text-xl mb-8 text-gray-600 max-w-2xl">
-            Pengalaman wisata berkualitas dengan harga terjangkau. Dari pantai indah hingga penginapan nyaman, 
-            kami menghadirkan petualangan tak terlupakan di Lombok tanpa menguras kantong.
+            Premium travel, accessible prices. Discover Lombok’s stunning coastlines and comfortable retreats through an unforgettable journey that fits your budget.
           </p>
           
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex items-center bg-white/90 px-4 py-3 rounded-lg border border-amber-200 shadow-sm hover:shadow-md transition-shadow">
               <Shield className="text-amber-600 mr-3" />
               <div>
-                <p className="font-semibold text-gray-900">Harga Terjangkau</p>
-                <p className="text-sm text-gray-600">Kualitas Terjamin</p>
+                <p className="font-semibold text-gray-900">Exceptional Value</p>
+                <p className="text-sm text-gray-600">Proven Quality</p>
               </div>
             </div>
             <div className="flex items-center bg-white/90 px-4 py-3 rounded-lg border border-amber-200 shadow-sm hover:shadow-md transition-shadow">
               <Star className="text-amber-600 fill-amber-600/30 mr-3" />
               <div>
-                <p className="font-semibold text-gray-900">Tour Guide Professional</p>
-                <p className="text-sm text-gray-600">Ramah & Berpengalaman</p>
+                <p className="font-semibold text-gray-900">Professional Guides</p>
+                <p className="text-sm text-gray-600">Certified. Friendly. Experienced</p>
               </div>
             </div>
             <div className="flex items-center bg-white/90 px-4 py-3 rounded-lg border border-amber-200 shadow-sm hover:shadow-md transition-shadow">
               <Award className="text-amber-600 mr-3" />
               <div>
-                <p className="font-semibold text-gray-900">Harga Terbaik</p>
-                <p className="text-sm text-gray-600">Garansi Termurah</p>
+                <p className="font-semibold text-gray-900">Best Rates</p>
+                <p className="text-sm text-gray-600">Lowest Price Guaranteed</p>
               </div>
             </div>
           </div>
@@ -61,14 +58,14 @@ export default function Hero() {
               href="#packages" 
               className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Lihat Paket Hemat
+              View Deal Packages
               <ChevronRight className="ml-2" size={20} />
             </a>
             <a 
               href="#contact" 
               className="bg-transparent border-2 border-amber-500 hover:bg-amber-50 text-amber-700 font-bold py-4 px-8 rounded-xl flex items-center justify-center transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              Konsultasi Gratis
+             Complimentary Consultation
             </a>
           </div>
         </div>

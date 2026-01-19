@@ -50,7 +50,7 @@ export default function Home() {
             
             {/* Logo Leisure Map */}
             <div className="flex justify-center mb-6">
-              <div className="relative w-48 h-16 md:w-64 md:h-20">
+              <div className="relative w-200 h-20 md:w-64 md:h-20">
                 <Image
                   src="/logo_leisuremap.png"
                   alt="Leisure Map Logo"
@@ -59,33 +59,6 @@ export default function Home() {
                   priority
                   sizes="(max-width: 768px) 192px, 256px"
                 />
-              </div>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-gray-900">Temukan </span>
-              <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                Harta Karun
-              </span>
-              <span className="text-gray-900"> Indonesia</span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-emerald-50 rounded-full">
-                <Mountain className="text-emerald-600" size={16} />
-                <span className="text-sm text-gray-700">Pemandangan Alam</span>
-              </div>
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-amber-50 rounded-full">
-                <Waves className="text-amber-600" size={16} />
-                <span className="text-sm text-gray-700">Pantai Indah</span>
-              </div>
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 rounded-full">
-                <Palette className="text-blue-600" size={16} />
-                <span className="text-sm text-gray-700">Budaya Kaya</span>
               </div>
             </div>
           </div>
@@ -102,10 +75,10 @@ export default function Home() {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Jelajahi <span className="text-amber-700">Pulau-Pulau</span> Legendaris
+              Explore the <span className="text-amber-700">Heavenly </span> Islands
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Klik pada pulau untuk membuka petualangan dan menemukan harta karun wisata yang tersembunyi
+              <span className="text-amber-700">Click </span> the island to begin your journey and find hidden travel treasures.
             </p>
           </div>
 
@@ -255,17 +228,16 @@ export default function Home() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900">Bali</h3>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 md:w-3 md:h-3 bg-emerald-500 rounded-full"></div>
-                    <p className="text-emerald-600 font-medium text-sm md:text-base">Pulau Dewata</p>
+                    <p className="text-emerald-600 font-medium text-sm md:text-base">The Morning of The World</p>
                   </div>
                 </div>
               </div>
               <ul className="space-y-2 md:space-y-3">
                 {[
-                  { icon: "🏯", text: "Budaya Hindu yang kaya & Pura-pura megah" },
-                  { icon: "🏖️", text: "Pantai Kuta, Seminyak, & Uluwatu" },
-                  { icon: "🌋", text: "Gunung Batur & panorama perbukitan" },
-                  { icon: "🛍️", text: "Shopping & nightlife internasional" },
-                  { icon: "🍽️", text: "Kuliner fine dining & warung tradisional" },
+                  { icon: "🏯", text: "Cultural Heart (Ubud & Uluwatu)" },
+                  { icon: "🏖️", text: "The 'Instagram' Islands (Nusa Penida)" },
+                  { icon: "🌋", text: "Volcanic Sunrises (Mount Batur)" },
+                  { icon: "🍾", text: "Beach Clubs & Nightlife" },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 md:gap-3 text-gray-700">
                     <span className="text-lg md:text-xl mt-0.5 shrink-0">{item.icon}</span>
@@ -278,7 +250,7 @@ export default function Home() {
                   <button className="w-full group relative overflow-hidden px-4 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold rounded-lg md:rounded-xl hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base">
                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      Buka Petualangan Bali
+                      Explore Bali
                       <ChevronRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </button>
@@ -309,17 +281,17 @@ export default function Home() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900">Lombok</h3>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 md:w-3 md:h-3 bg-amber-500 rounded-full"></div>
-                    <p className="text-amber-600 font-medium text-sm md:text-base">Pulau Seribu Masjid</p>
+                    <p className="text-amber-600 font-medium text-sm md:text-base">The Island of Golden Pearls</p>
                   </div>
                 </div>
               </div>
               <ul className="space-y-2 md:space-y-3">
                 {[
-                  { icon: "🕌", text: "Budaya Sasak & Masjid-masjid indah" },
-                  { icon: "🏝️", text: "Gili Islands & pantai tersembunyi" },
-                  { icon: "⛰️", text: "Gunung Rinjani untuk pendaki" },
-                  { icon: "🤿", text: "Snorkeling & diving terbaik" },
-                  { icon: "🏄", text: "Surf spot yang belum banyak diketahui" },
+                  { icon: "🕌", text: "The Best Pearl Farm in The World" },
+                  { icon: "🏝️", text: "The Famous Gili Islands" },
+                  { icon: "⛰️", text: "The Crown Jewel (Mount Rinjani)" },
+                  { icon: "🤿", text: "Snorkeling & diving" },
+                  { icon: "🏄", text: "Surfer’s Paradise (Kuta Lombok)" },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 md:gap-3 text-gray-700">
                     <span className="text-lg md:text-xl mt-0.5 shrink-0">{item.icon}</span>
@@ -332,7 +304,7 @@ export default function Home() {
                   <button className="w-full group relative overflow-hidden px-4 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-lg md:rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base">
                     <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      Buka Petualangan Lombok
+                      Explore Lombok
                       <ChevronRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </button>
